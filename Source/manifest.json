@@ -1,0 +1,14 @@
+{
+	"name": "Thousand-Millionaire",
+	"version": "1.0",
+	"description": "Replaces 'billion dollars' with 'thousand-million dollars' whenever possible.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	],
+	"manifest_version": 2
+}
